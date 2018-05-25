@@ -10,8 +10,15 @@
       "email": "mark.morgan@district5.co.uk"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "ssh://git@bitbucket.district5.co.uk/d5libs/filter.git"
+    }
+  ],
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.4.0",
+    "district5/filter": "2.0.*"
   },
   "autoload": {
     "psr-4": { "District5\\": "src/" }

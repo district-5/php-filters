@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4e4a457b6a1858f0db4923df0de1530f",
+    "packages": [
+        {
+            "name": "district5/filter",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@bitbucket.district5.co.uk/d5libs/filter.git",
+                "reference": "4233967217054a10ae49bb05e984dd3c4b43ba27"
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "District5\\": "src/"
+                }
+            },
+            "license": [
+                "Proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Morgan",
+                    "email": "mark.morgan@district5.co.uk"
+                }
+            ],
+            "description": "District5 Filter Library",
+            "homepage": "https://bitbucket.developer.io/projects/D5LIBS/repos/filter/browse",
+            "keywords": [
+                "district5",
+                "filter",
+                "php"
+            ],
+            "time": "2018-05-25T18:45:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
