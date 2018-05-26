@@ -2,7 +2,7 @@
   "name": "district5/filters",
   "description": "District5 Filters Library",
   "keywords": ["php", "district5", "filters"],
-  "homepage": "https://bitbucket.developer.io/projects/D5LIBS/repos/filters/browse",
+  "homepage": "https://bitbucket.district5.co.uk/projects/D5LIBS/repos/filters/browse",
   "license": "Proprietary",
   "authors": [
     {
@@ -18,7 +18,7 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "district5/filter": "2.0.*"
+    "district5/filter": "2.*"
   },
   "autoload": {
     "psr-4": { "District5\\": "src/" }

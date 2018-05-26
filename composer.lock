@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e4a457b6a1858f0db4923df0de1530f",
+    "content-hash": "4fda6aeb294160736c839540108ba754",
     "packages": [
         {
             "name": "district5/filter",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "ssh://git@bitbucket.district5.co.uk/d5libs/filter.git",
-                "reference": "4233967217054a10ae49bb05e984dd3c4b43ba27"
+                "reference": "d7f3edcc7da6d37c4a286b9de5405ac790f127f9"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -33,13 +33,13 @@
                 }
             ],
             "description": "District5 Filter Library",
-            "homepage": "https://bitbucket.developer.io/projects/D5LIBS/repos/filter/browse",
+            "homepage": "https://bitbucket.district5.co.uk/projects/D5LIBS/repos/filter/browse",
             "keywords": [
                 "district5",
                 "filter",
                 "php"
             ],
-            "time": "2018-05-25T18:45:29+00:00"
+            "time": "2018-05-26T09:52:04+00:00"
         }
     ],
     "packages-dev": [],
