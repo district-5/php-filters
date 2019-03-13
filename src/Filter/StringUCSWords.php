@@ -18,14 +18,14 @@
 namespace District5\Filter;
 
 /**
- * StringLower
+ * StringUpper
  * 
- * A string filter to make all characters lower case (this
- * filter just proxies PHP's strtolower function)
+ * A string filter to make all characters upper case (this
+ * filter just proxies PHP's strtoupper function)
  * 
  * @author Mark Morgan <mark.morgan@district5.co.uk>
  */
-class StringLower implements I
+class StringUCSWords implements I
 {
 	
 	/**
@@ -34,11 +34,11 @@ class StringLower implements I
 	 */
 	public function filter($value)
 	{
-        if (extension_loaded('mbstring'))
+	    if (extension_loaded('mbstring'))
         {
-            return mb_strtolower($value);
+            return mb_convert_case($value, MB_CASE_TITLE, "UTF-8");
         }
 
-		return strtolower($value);
+		return ucwords($value);
 	}
 }

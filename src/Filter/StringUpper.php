@@ -34,6 +34,11 @@ class StringUpper implements I
 	 */
 	public function filter($value)
 	{
+	    if (extension_loaded('mbstring'))
+        {
+            return mb_strtoupper($value);
+        }
+
 		return strtoupper($value);
 	}
 }
