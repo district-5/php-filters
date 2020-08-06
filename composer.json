@@ -13,7 +13,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "ssh://git@bitbucket.district5.co.uk/d5libs/filter.git"
+      "url": "git@github.com:district-5/php-filter.git"
     }
   ],
   "require": {
