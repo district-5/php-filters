@@ -18,18 +18,16 @@
 namespace District5\Filter;
 
 /**
- * ArrayOfStringToInt
- * 
  * An array of strings filter to make all strings integers.
  *
  * NOTE: this should use validation first to validate that all values are a string representation of an integer,
  * otherwise unexpected behaviour may occur as this function depends on PHP's intval function
  * 
- * @author Mark Morgan <mark.morgan@district5.co.uk>
+ * @author District5
+ * @package District5\Filter
  */
-class ArrayOfStringToInt extends StringTrim
+class ArrayOfStringToInt implements I
 {
-	
 	/**
 	 * (non-PHPdoc)
 	 * @see \District5\Filter\I::filter()
@@ -38,8 +36,7 @@ class ArrayOfStringToInt extends StringTrim
 	{
 	    $toReturn = array();
 
-	    foreach ($value as $preFiltered)
-        {
+	    foreach ($value as $preFiltered) {
             $toReturn[] = intval($preFiltered);
         }
 

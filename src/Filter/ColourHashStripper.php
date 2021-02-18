@@ -18,23 +18,22 @@
 namespace District5\Filter;
 
 /**
- * ColourHashStripper
- * 
  * A filter to remove a # from the start of a string hex colour code
  * 
- * @author Mark Morgan <mark.morgan@district5.co.uk>
+ * @author District5
+ * @package District5\Filter
  */
 class ColourHashStripper implements I
 {
-	
 	/**
 	 * (non-PHPdoc)
 	 * @see \District5\Filter\I::filter()
 	 */
 	public function filter($value)
 	{
-        if (strpos($value, '#') === 0)
+        if (strpos($value, '#') === 0) {
             return substr($value, 1);
+        }
 
 		return $value;
 	}

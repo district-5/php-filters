@@ -18,16 +18,14 @@
 namespace District5\Filter;
 
 /**
- * StringTrim
- * 
  * A string trim filter to remove whitespace from start and end of string (this
  * filter just proxies PHP's trim function)
  * 
- * @author Mark Morgan <mark.morgan@district5.co.uk>
+ * @author District5
+ * @package District5\Filter
  */
 class StringTrim implements I
 {
-	
 	/**
 	 * (non-PHPdoc)
 	 * @see \District5\Filter\I::filter()
