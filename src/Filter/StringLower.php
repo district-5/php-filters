@@ -18,24 +18,21 @@
 namespace District5\Filter;
 
 /**
- * StringLower
- * 
  * A string filter to make all characters lower case (this
  * filter just proxies PHP's strtolower function)
  * 
- * @author Mark Morgan <mark.morgan@district5.co.uk>
+ * @author District5
+ * @package District5\Filter
  */
 class StringLower implements I
 {
-	
 	/**
 	 * (non-PHPdoc)
 	 * @see \District5\Filter\I::filter()
 	 */
 	public function filter($value)
 	{
-        if (extension_loaded('mbstring'))
-        {
+        if (extension_loaded('mbstring')) {
             return mb_strtolower($value);
         }
 

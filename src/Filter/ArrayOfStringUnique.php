@@ -18,15 +18,13 @@
 namespace District5\Filter;
 
 /**
- * ArrayOfStringUnique
- * 
  * An array of unique strings
  * 
- * @author Mark Morgan <mark.morgan@district5.co.uk>
+ * @author District5
+ * @package District5\Filter
  */
-class ArrayOfStringUnique extends StringUpper
+class ArrayOfStringUnique implements I
 {
-	
 	/**
 	 * (non-PHPdoc)
 	 * @see \District5\Filter\I::filter()

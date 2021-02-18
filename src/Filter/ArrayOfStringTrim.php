@@ -18,15 +18,13 @@
 namespace District5\Filter;
 
 /**
- * ArrayOfStringTrim
- * 
  * An array of strings filter to make all strings lower case
  * 
- * @author Mark Morgan <mark.morgan@district5.co.uk>
+ * @author District5
+ * @package District5\Filter
  */
 class ArrayOfStringTrim extends StringTrim
 {
-	
 	/**
 	 * (non-PHPdoc)
 	 * @see \District5\Filter\I::filter()
@@ -35,8 +33,7 @@ class ArrayOfStringTrim extends StringTrim
 	{
 	    $toReturn = array();
 
-	    foreach ($value as $preFiltered)
-        {
+	    foreach ($value as $preFiltered) {
             $toReturn[] = parent::filter($preFiltered);
         }
 
