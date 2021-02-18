@@ -20,7 +20,13 @@
     "php": ">=5.4.0",
     "district5/filter": ">=2.1.0"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
   "autoload": {
     "psr-4": { "District5\\": "src/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "District5Tests\\FilterTests\\": "tests/FilterTests" }
   }
 }
