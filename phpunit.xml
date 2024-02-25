@@ -21,15 +21,15 @@
         verbose="false">
     <testsuites>
         <testsuite name="All Filter Tests">
-            <directory>tests/FilterTests</directory>
+            <directory>tests/FiltersTests</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory>src/Filter</directory>
+            <directory>src/Filters</directory>
             <exclude>
-                <directory>tests/FilterTests</directory>
+                <directory>tests/FiltersTests</directory>
             </exclude>
         </whitelist>
     </filter>
