@@ -21,8 +21,7 @@ use District5\Filters\StringTrim as StringTrimFilter;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class StringTrimTest
- * @package District5Tests\FilterTests
+ * StringTrimTest
  */
 class StringTrimTest extends TestCase
 {
