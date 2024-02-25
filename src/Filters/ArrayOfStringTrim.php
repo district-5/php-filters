@@ -31,10 +31,9 @@
 namespace District5\Filters;
 
 /**
- * An array of strings filter to make all strings lower case
- * 
- * @author District5
- * @package District5\Filter
+ * ArrayOfStringTrim
+ *
+ * An array of strings filter to trim all strings within the array.
  */
 class ArrayOfStringTrim extends StringTrim
 {
@@ -44,7 +43,7 @@ class ArrayOfStringTrim extends StringTrim
 	 */
 	public function filter($value)
 	{
-	    $toReturn = array();
+	    $toReturn = [];
 
 	    foreach ($value as $preFiltered) {
             $toReturn[] = parent::filter($preFiltered);

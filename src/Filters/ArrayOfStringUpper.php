@@ -31,7 +31,7 @@
 namespace District5\Filters;
 
 /**
- * An array of strings filter to make all strings upper case
+ * An array of strings filter to make all strings within the array as upper case version.
  * 
  * @author District5
  * @package District5\Filter
@@ -44,7 +44,7 @@ class ArrayOfStringUpper extends StringUpper
 	 */
 	public function filter($value)
 	{
-	    $toReturn = array();
+	    $toReturn = [];
 
 	    foreach ($value as $preFiltered) {
             $toReturn[] = parent::filter($preFiltered);
