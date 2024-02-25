@@ -30,13 +30,14 @@
  */
 namespace District5\Filters;
 
+use District5\Filter\FilterInterface;
+
 /**
- * A filter to remove a # from the start of a string hex colour code
- * 
- * @author District5
- * @package District5\Filter
+ * ColourHashStripper
+ *
+ * A filter to remove a # from the start of a string hex colour code.
  */
-class ColourHashStripper implements I
+class ColourHashStripper implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)

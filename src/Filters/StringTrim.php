@@ -30,14 +30,14 @@
  */
 namespace District5\Filters;
 
+use District5\Filter\FilterInterface;
+
 /**
- * A string trim filter to remove whitespace from start and end of string (this
- * filter just proxies PHP's trim function)
- * 
- * @author District5
- * @package District5\Filter
+ * StringTrim
+ *
+ * A string trim filter to remove whitespace from start and end of string (this filter just proxies PHP's trim function).
  */
-class StringTrim implements I
+class StringTrim implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)

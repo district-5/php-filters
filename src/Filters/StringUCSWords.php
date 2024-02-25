@@ -30,14 +30,14 @@
  */
 namespace District5\Filters;
 
+use District5\Filter\FilterInterface;
+
 /**
- * A string filter to make all characters upper case (this
- * filter just proxies PHP's strtoupper function)
- * 
- * @author District5
- * @package District5\Filter
+ * StringUCSWords
+ *
+ * A string filter to make all characters upper case (this filter just proxies PHP's ucwords / mb_convert_case function).
  */
-class StringUCSWords implements I
+class StringUCSWords implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)

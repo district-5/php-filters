@@ -30,14 +30,14 @@
  */
 namespace District5\Filters;
 
+use District5\Filter\FilterInterface;
+
 /**
- * A string filter to make all characters lower case (this
- * filter just proxies PHP's strtolower function)
- * 
- * @author District5
- * @package District5\Filter
+ * StringLower
+ *
+ * A string filter to make all characters lower case (this filter just proxies PHP's strtolower / mb_strtolower function).
  */
-class StringLower implements I
+class StringLower implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)

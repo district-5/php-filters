@@ -31,10 +31,9 @@
 namespace District5\Filters;
 
 /**
+ * ArrayOfStringUpper
+ *
  * An array of strings filter to make all strings within the array as upper case version.
- * 
- * @author District5
- * @package District5\Filter
  */
 class ArrayOfStringUpper extends StringUpper
 {
