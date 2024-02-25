@@ -17,7 +17,7 @@
  */
 namespace District5Tests\FilterTests;
 
-use District5\Filter\StringLower as StringLowerFilter;
+use District5\Filters\StringLower as StringLowerFilter;
 use PHPUnit\Framework\TestCase;
 
 /**

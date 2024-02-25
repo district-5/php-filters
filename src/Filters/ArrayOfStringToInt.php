@@ -28,7 +28,7 @@
  *   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  *   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-namespace District5\Filter;
+namespace District5\Filters;
 
 /**
  * An array of strings filter to make all strings integers.
@@ -43,7 +43,7 @@ class ArrayOfStringToInt implements I
 {
 	/**
 	 * (non-PHPdoc)
-	 * @see \District5\Filter\I::filter()
+	 * @see \District5\Filters\I::filter()
 	 */
 	public function filter($value)
 	{

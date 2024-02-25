@@ -28,27 +28,22 @@
  *   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  *   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-namespace District5\Filter;
+namespace District5\Filters;
 
 /**
- * A string filter to make all characters lower case (this
- * filter just proxies PHP's strtolower function)
+ * An array of unique strings
  * 
  * @author District5
  * @package District5\Filter
  */
-class StringLower implements I
+class ArrayOfStringUnique implements I
 {
 	/**
 	 * (non-PHPdoc)
-	 * @see \District5\Filter\I::filter()
+	 * @see \District5\Filters\I::filter()
 	 */
 	public function filter($value)
 	{
-        if (extension_loaded('mbstring')) {
-            return mb_strtolower($value);
-        }
-
-		return strtolower($value);
+	    return array_unique($value);
 	}
 }

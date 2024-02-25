@@ -28,22 +28,27 @@
  *   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  *   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-namespace District5\Filter;
+namespace District5\Filters;
 
 /**
- * An array of unique strings
+ * A string filter to make all characters upper case (this
+ * filter just proxies PHP's strtoupper function)
  * 
  * @author District5
  * @package District5\Filter
  */
-class ArrayOfStringUnique implements I
+class StringUpper implements I
 {
 	/**
 	 * (non-PHPdoc)
-	 * @see \District5\Filter\I::filter()
+	 * @see \District5\Filters\I::filter()
 	 */
 	public function filter($value)
 	{
-	    return array_unique($value);
+	    if (extension_loaded('mbstring')) {
+            return mb_strtoupper($value);
+        }
+
+		return strtoupper($value);
 	}
 }

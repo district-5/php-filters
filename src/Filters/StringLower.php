@@ -28,26 +28,27 @@
  *   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  *   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-namespace District5\Filter;
+namespace District5\Filters;
 
 /**
- * A filter to remove a # from the start of a string hex colour code
+ * A string filter to make all characters lower case (this
+ * filter just proxies PHP's strtolower function)
  * 
  * @author District5
  * @package District5\Filter
  */
-class ColourHashStripper implements I
+class StringLower implements I
 {
 	/**
 	 * (non-PHPdoc)
-	 * @see \District5\Filter\I::filter()
+	 * @see \District5\Filters\I::filter()
 	 */
 	public function filter($value)
 	{
-        if (strpos($value, '#') === 0) {
-            return substr($value, 1);
+        if (extension_loaded('mbstring')) {
+            return mb_strtolower($value);
         }
 
-		return $value;
+		return strtolower($value);
 	}
 }

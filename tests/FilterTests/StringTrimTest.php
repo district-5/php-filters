@@ -17,7 +17,7 @@
  */
 namespace District5Tests\FilterTests;
 
-use District5\Filter\StringTrim as StringTrimFilter;
+use District5\Filters\StringTrim as StringTrimFilter;
 use PHPUnit\Framework\TestCase;
 
 /**
