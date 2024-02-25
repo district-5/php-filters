@@ -30,13 +30,14 @@
  */
 namespace District5\Filters;
 
+use District5\Filter\FilterInterface;
+
 /**
- * An array of unique strings
- * 
- * @author District5
- * @package District5\Filter
+ * ArrayOfStringUnique
+ *
+ * A filter to only return the array of unique strings.
  */
-class ArrayOfStringUnique implements I
+class ArrayOfStringUnique implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)
