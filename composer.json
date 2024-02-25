@@ -27,6 +27,6 @@
     "psr-4": { "District5\\Filters\\": "src/Filters/" }
   },
   "autoload-dev": {
-    "psr-4": { "District5Tests\\FilterTests\\": "tests/FilterTests" }
+    "psr-4": { "District5Tests\\FiltersTests\\": "tests/FiltersTests" }
   }
 }

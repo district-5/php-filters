@@ -15,7 +15,7 @@
  * The above copyright notice and this permission notice shall be included in
  * all licensed copies of the Software.
  */
-namespace District5Tests\FilterTests;
+namespace District5Tests\FiltersTests;
 
 use District5\Filters\StringTrim as StringTrimFilter;
 use PHPUnit\Framework\TestCase;
