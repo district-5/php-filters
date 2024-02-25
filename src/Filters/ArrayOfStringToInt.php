@@ -30,16 +30,17 @@
  */
 namespace District5\Filters;
 
+use District5\Filter\FilterInterface;
+
 /**
- * An array of strings filter to make all strings integers.
+ * ArrayOfStringToInt
+ *
+ * An array of strings filter to make all strings within the array integer versions.
  *
  * NOTE: this should use validation first to validate that all values are a string representation of an integer,
  * otherwise unexpected behaviour may occur as this function depends on PHP's intval function
- * 
- * @author District5
- * @package District5\Filter
  */
-class ArrayOfStringToInt implements I
+class ArrayOfStringToInt implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)
@@ -47,7 +48,7 @@ class ArrayOfStringToInt implements I
 	 */
 	public function filter($value)
 	{
-	    $toReturn = array();
+	    $toReturn = [];
 
 	    foreach ($value as $preFiltered) {
             $toReturn[] = intval($preFiltered);
