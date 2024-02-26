@@ -9,10 +9,11 @@ composer require district5/filters
 
 ## Usage
 All filters in this library conform to the [District5 Filter](https://github.com/district-5/php-filter) interface. All can be used in the same way:
+
 ```php
 $value = 'Hello';
 
-$filter = new \District5\Filter\StringLower();
+$filter = new \District5\Filters\StringLower();
 $filteredValue = $filter->filter($value);   // 'hello'
 ```
 

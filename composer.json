@@ -3,30 +3,24 @@
   "description": "District5 Filters Library",
   "keywords": ["php", "district5", "filters"],
   "homepage": "https://github.com/district-5/php-filters",
-  "license": "MIT",
+  "license": "mit",
   "authors": [
     {
       "name": "District5",
       "email": "hello@district5.co.uk"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:district-5/php-filter.git"
-    }
-  ],
   "require": {
-    "php": ">=5.4.0",
-    "district5/filter": ">=2.1.0"
+    "php": ">=7.1",
+    "district5/filter": "3.*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7"
+    "phpunit/phpunit": "9.*"
   },
   "autoload": {
-    "psr-4": { "District5\\": "src/" }
+    "psr-4": { "District5\\Filters\\": "src/Filters/" }
   },
   "autoload-dev": {
-    "psr-4": { "District5Tests\\FilterTests\\": "tests/FilterTests" }
+    "psr-4": { "District5Tests\\FiltersTests\\": "tests/FiltersTests" }
   }
 }

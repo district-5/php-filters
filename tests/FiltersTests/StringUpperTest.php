@@ -15,32 +15,31 @@
  * The above copyright notice and this permission notice shall be included in
  * all licensed copies of the Software.
  */
-namespace District5Tests\FilterTests;
+namespace District5Tests\FiltersTests;
 
-use District5\Filter\StringLower as StringLowerFilter;
+use District5\Filters\StringUpper as StringUpperFilter;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class StringLowerTest
- * @package District5Tests\FilterTests
+ * StringUpperTest
  */
-class StringLowerTest extends TestCase
+class StringUpperTest extends TestCase
 {
-    public function testNoModifyStringAlreadyLowercase()
+    public function testNoModifyStringAlreadyUppercase()
     {
-        $value = 'nomodify';
+        $value = 'NOMODIFY';
 
-        $filter = new StringLowerFilter();
+        $filter = new StringUpperFilter();
 
-        $this->assertEquals('nomodify', $filter->filter($value));
+        $this->assertEquals('NOMODIFY', $filter->filter($value));
     }
 
-    public function testCheckStringWithMultipleUppercase()
+    public function testCheckStringWithMultipleLowercase()
     {
         $value = 'ToModify';
 
-        $filter = new StringLowerFilter();
+        $filter = new StringUpperFilter();
 
-        $this->assertEquals('tomodify', $filter->filter($value));
+        $this->assertEquals('TOMODIFY', $filter->filter($value));
     }
 }
