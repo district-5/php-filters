@@ -39,12 +39,12 @@ use District5\Filter\FilterInterface;
  */
 class StringTrimDoubleOrMoreWhitespace implements FilterInterface
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
         return preg_replace('!\s+!', ' ', $value);
-	}
+    }
 }

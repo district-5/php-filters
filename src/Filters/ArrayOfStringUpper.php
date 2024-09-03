@@ -37,18 +37,18 @@ namespace District5\Filters;
  */
 class ArrayOfStringUpper extends StringUpper
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
-	    $toReturn = [];
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
+        $toReturn = [];
 
-	    foreach ($value as $preFiltered) {
+        foreach ($value as $preFiltered) {
             $toReturn[] = parent::filter($preFiltered);
         }
 
-		return $toReturn;
-	}
+        return $toReturn;
+    }
 }

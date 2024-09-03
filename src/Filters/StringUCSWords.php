@@ -39,16 +39,16 @@ use District5\Filter\FilterInterface;
  */
 class StringUCSWords implements FilterInterface
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
-	    if (extension_loaded('mbstring')) {
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
+        if (extension_loaded('mbstring')) {
             return mb_convert_case($value, MB_CASE_TITLE, "UTF-8");
         }
 
-		return ucwords($value);
-	}
+        return ucwords($value);
+    }
 }

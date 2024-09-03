@@ -39,12 +39,12 @@ use District5\Filter\FilterInterface;
  */
 class ArrayOfStringUnique implements FilterInterface
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
-	    return array_unique($value);
-	}
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
+        return array_unique($value);
+    }
 }
