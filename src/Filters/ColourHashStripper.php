@@ -39,16 +39,16 @@ use District5\Filter\FilterInterface;
  */
 class ColourHashStripper implements FilterInterface
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
         if (strpos($value, '#') === 0) {
             return substr($value, 1);
         }
 
-		return $value;
-	}
+        return $value;
+    }
 }

@@ -39,16 +39,16 @@ use District5\Filter\FilterInterface;
  */
 class StringUpper implements FilterInterface
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
-	    if (extension_loaded('mbstring')) {
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
+        if (extension_loaded('mbstring')) {
             return mb_strtoupper($value);
         }
 
-		return strtoupper($value);
-	}
+        return strtoupper($value);
+    }
 }
