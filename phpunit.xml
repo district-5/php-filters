@@ -20,7 +20,7 @@
         bootstrap="vendor/autoload.php"
         verbose="false">
     <testsuites>
-        <testsuite name="AllFilterTests">
+        <testsuite name="AllFiltersTests">
             <directory>tests/FiltersTests</directory>
         </testsuite>
     </testsuites>
