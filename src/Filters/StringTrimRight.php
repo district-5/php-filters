@@ -39,12 +39,12 @@ use District5\Filter\FilterInterface;
  */
 class StringTrimRight implements FilterInterface
 {
-	/**
-	 * (non-PHPdoc)
-	 * @see \District5\Filters\I::filter()
-	 */
-	public function filter($value)
-	{
-		return rtrim($value);
-	}
+    /**
+     * (non-PHPdoc)
+     * @see \District5\Filters\I::filter()
+     */
+    public function filter($value)
+    {
+        return rtrim($value);
+    }
 }
