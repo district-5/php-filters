@@ -33,11 +33,11 @@ namespace District5\Filters;
 use District5\Filter\FilterInterface;
 
 /**
- * StringTrim
+ * StringTrimRight
  *
- * A string trim filter to remove whitespace from the start and end of the string (this filter just proxies PHP's trim function).
+ * A string trim filter to remove whitespace from the end of the string (this filter just proxies PHP's rtrim function).
  */
-class StringTrim implements FilterInterface
+class StringTrimRight implements FilterInterface
 {
 	/**
 	 * (non-PHPdoc)
@@ -45,6 +45,6 @@ class StringTrim implements FilterInterface
 	 */
 	public function filter($value)
 	{
-		return trim($value);
+		return rtrim($value);
 	}
 }
