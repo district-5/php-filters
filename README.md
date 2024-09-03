@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/district-5/php-filters/graph/badge.svg?token=6B64FC8GRY)](https://codecov.io/gh/district-5/php-filters)
 # PHP Filters
 A collection of filters implementing the [District5 Filter](https://github.com/district-5/php-filter) interface.
 
